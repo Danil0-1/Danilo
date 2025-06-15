@@ -17,6 +17,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  background-color: #424242;
 }
 
 .Barra-navegacion a {
@@ -33,6 +34,7 @@ body {
 .Barra-navegacion img {
   height: 60px;
   vertical-align: middle;
+  background-color: #424242;
 }
 
 .foto-personal {
