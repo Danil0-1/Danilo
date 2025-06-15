@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.SerenataSinMariachis {  
+    display: block;       
+    margin: 35px auto;    
+    max-width: 90%;       
+    height: auto;          
+    border-radius: 10px;   
+    box-shadow: 0 0 10px #00000088;
+}
+
+  @keyframes flotar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  .SerenataSinMariachis {
+    width: 100%;
+    max-width: 300px;
+    animation: flotar 3s ease-in-out infinite;
+    display: block;
+    margin: 30 auto;
+  }

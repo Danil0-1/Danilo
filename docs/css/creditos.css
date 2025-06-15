@@ -1,0 +1,64 @@
+
+/* BOTONES REDES - ESTILO GENERAL */
+.instagram-btn, .whatsapp-btn, .github-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra ícono + texto */
+    gap: 10px; /* Espacio entre ícono y texto */
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto; /* Centrado horizontal */
+    transition: background-color 0.3s ease;
+}
+
+/* ESTILOS INDIVIDUALES */
+.instagram-btn {
+    background-color: #E4405F;
+}
+
+.instagram-btn:hover {
+    background-color: #bc2a8d;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+.github-btn {
+    background-color: #333333;
+}
+
+.github-btn:hover {
+    background-color: #1d1d1d;
+}
+.instagram-icon, .whatsapp-icon, .github-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .instagram-btn, .whatsapp-btn, .github-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .instagram-icon, .whatsapp-icon, .github-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+
+}

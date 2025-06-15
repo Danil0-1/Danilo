@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+.barra-decorativa {
+    background-color: #424242;
+    padding: 10px 20px;
+}
+
+.Barra-navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Barra-navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    transform: scaleX(1.1);  
+    letter-spacing: 1px; 
+}
+.Barra-navegacion img {
+  height: 60px;
+  vertical-align: middle;
+}
+
+.foto-personal {
+  display: block;       
+  margin: 35px auto;    
+  max-width: 90%;       
+  height: auto;          
+  border-radius: 10px;   
+  box-shadow: 0 0 10px #00000088;
+}
+
+.Barra-navegacion a:hover {
+  background-color: #666;
+}
+
+@media (max-width: 600px) {
+  .Barra-navegacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Barra-navegacion a {
+    width: 80%;
+    text-align: center;
+  }
+  .foto-personal {
+    max-width: 95vw;
+  }
+
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  0% { transform: translateX(-30px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes expandBar {
+  0% { width: 0; }
+  100% { width: 60px; }
+}
+
+.Yo {
+  background: linear-gradient(135deg, #ffffff, #f1f1f1);
+  padding: 4rem 2rem;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in;
+  max-width: 1000px;
+  margin: auto;
+  color: #333;
+}
+
+.Yo h2, .Yo h3 {
+  color: #000000;
+  margin-bottom: 1rem;
+  position: relative;
+  animation: slideInLeft 0.7s ease-out;
+}
+
+.Yo h2::after, .Yo h3::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  display: block;
+  margin-top: 0.4rem;
+  animation: expandBar 1s ease-out;
+}
+
+.Yo p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  animation: fadeInUp 0.9s forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.Yo ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Yo li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  animation: fadeInUp 0.9s forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.Yo li::before {
+  content: '➤';
+  position: absolute;
+  left: 0;
+  color: #000000;
+}
+
+.foto-personal {
+  display: block;
+  margin: 35px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000088;
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
+}
+
